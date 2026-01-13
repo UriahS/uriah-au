@@ -4,34 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uriah.au</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
     <style>
-        /* 1. Reset default browser margins */
-        body, html {
+        body {
+            background-color: #000000;
             margin: 0;
             padding: 0;
-            height: 100%;
-            background-color: #f0f0f0; /* Optional: Light gray background */
-        }
-
-        /* 2. The Centering Magic (Flexbox) */
-        body {
+            height: 100vh;
             display: flex;
-            justify-content: center; /* Aligns horizontally */
-            align-items: center;     /* Aligns vertically */
+            justify-content: center;
+            align-items: center;
         }
 
-        /* 3. Image Responsiveness */
-        img {
-            max-width: 90%;    /* Ensures image never exceeds screen width (mobile friendly) */
-            max-height: 90vh;  /* Ensures image fits vertically without scrolling */
-            height: auto;      /* Maintains aspect ratio */
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: Adds a subtle shadow */
+        .logo-text {
+            color: #ffffff;
+            background-color: #000000;
+            font-family: 'Righteous', cursive;
+            font-size: 5rem;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            cursor: default;
         }
     </style>
 </head>
 <body>
-
-    <img src="logo.png" alt="A perfectly centered image">
-
+    <h1 class="logo-text">Uriah.au</h1>
 </body>
 </html>
