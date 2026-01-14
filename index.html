@@ -22,11 +22,12 @@
 			}
 
 			#domain-name {
-				font-family: 'Audiowide', cursive;
+				font-family: 'Audiowide', Helvetica, Arial, sans-serif;
 				color: white;
 				white-space: nowrap;
 				visibility: hidden;
 				line-height: 1;
+				text-transform: uppercase;
 			}
 		</style>
 	</head>
@@ -35,7 +36,8 @@
 		<script>
 			const el = document.getElementById('domain-name');
 			
-			const domain = window.location.hostname || "Local File";
+			var domain = window.location.hostname || "local file";
+			domain = domain.replace(/^./, (char) => char.toUpperCase());
 			document.title = domain;
 			el.textContent = domain;
 			
